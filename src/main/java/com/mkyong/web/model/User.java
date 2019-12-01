@@ -5,6 +5,7 @@ import com.mkyong.web.jsonview.Views;
 
 public class User {
 	//comments
+	//Another changes
 
 	@JsonView(Views.Public.class)
 	String username;
