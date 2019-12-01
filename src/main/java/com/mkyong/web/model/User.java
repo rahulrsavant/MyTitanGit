@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonView;
 import com.mkyong.web.jsonview.Views;
 
 public class User {
+	//comments
 
 	@JsonView(Views.Public.class)
 	String username;
