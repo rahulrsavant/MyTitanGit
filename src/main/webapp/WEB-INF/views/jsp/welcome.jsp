@@ -140,11 +140,8 @@
 	
 	
 	function getDataThroughAjax() {
-		var search = {}
-		search["employeeId"] = $("#empid").val();
-		search["firstName"] = $("#firstname").val();
-		search["lastName"] = $("#lastname").val();	
-		search["age"] = $("#age").val();
+		var search = $("#empid").val();
+		
 		
 		$.ajax({
 			type : "GET",

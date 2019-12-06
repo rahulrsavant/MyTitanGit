@@ -140,7 +140,11 @@
 	
 	
 	function getDataThroughAjax() {
-		var search = $("#empid").val();
+		var search = {}
+		search["employeeId"] = $("#empid").val();
+		search["firstName"] = $("#firstname").val();
+		search["lastName"] = $("#lastname").val();	
+		search["age"] = $("#age").val();
 		
 		$.ajax({
 			type : "GET",
@@ -207,6 +211,7 @@
 			done : function(e) {
 				console.log("DONE");
 				enableSearchButton(true);
+				display(data);
 			}
 		});
 
@@ -239,6 +244,7 @@
 			done : function(e) {
 				console.log("DONE");
 				enableSearchButton(true);
+				display(data);
 			}
 		});
 
